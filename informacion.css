@@ -1,0 +1,57 @@
+/* Fondo */
+.fondo {
+    background-image: url(contactanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    font-family: Arial, sans-serif;
+}
+
+/* Caja Principal */
+.caja1 {
+    background-color: rgba(67, 49, 26, 0.532);
+    width: 400px;
+    height: 700px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: aliceblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo de los textos */
+.t1 {
+    transform: translateX(10px);
+}
+
+.t2 {
+    transform: translateX(140px);
+}
+
+/* Media query para pantallas de hasta 768px (Tabletas y teléfonos) */
+@media (max-width: 768px) {
+    .caja1 {
+        width: 90%;  /* Ajusta el ancho de la caja para que ocupe el 90% del ancho de la pantalla */
+        height: auto;  /* Ajusta la altura automáticamente */
+        margin: 0 auto;  /* Centra la caja */
+        padding: 15px;
+    }
+
+    .t1, .t2 {
+        font-size: 16px;  /* Ajusta el tamaño de la fuente para que sea más legible en pantallas más pequeñas */
+    }
+}
+
+/* Media query para pantallas de hasta 480px (teléfonos pequeños) */
+@media (max-width: 480px) {
+    .caja1 {
+        width: 100%;  /* Ajusta la caja para ocupar todo el ancho de la pantalla */
+        height: auto;  /* Ajusta la altura automáticamente */
+        padding: 10px;
+    }
+
+    .t1, .t2 {
+        font-size: 14px;  /* Ajusta aún más el tamaño de la fuente para pantallas pequeñas */
+    }
+}
